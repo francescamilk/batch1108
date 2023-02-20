@@ -1,0 +1,17 @@
+<h1>The team</h1>
+
+<h3>Who are you looking for?</h3>
+<form action="/contact">
+    <input type="text" 
+        name="student"   
+        value="<%= params[:student] %>"
+        placeholder="Who are you looking for?"
+    >
+    <input type="submit">
+</form>
+
+<ul>
+    <% @students.each do |student| %>
+        <li><%= student %></li>
+    <% end %>
+</ul>
